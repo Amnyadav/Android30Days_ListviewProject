@@ -10,7 +10,6 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class Myadapter(var context1:Context,var arrayList: ArrayList<User>):ArrayAdapter<User>(context1,R.layout.custom_listview,arrayList) {
 
-
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view=LayoutInflater.from(context).inflate(R.layout.custom_listview,parent,false)
         val username=view.findViewById<TextView>(R.id.name)
